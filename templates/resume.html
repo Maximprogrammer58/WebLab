@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Resume</title>
+   <link rel="stylesheet" href="{{url_for('static', filename='style/resume_style.css')}}">
+</head>
+
+<body>
+   <header>
+      <div class="logo">
+         <a href="/"><img class="home" src="{{url_for('static', filename='icons/home.png')}}"></a>
+      </div>
+      <nav class="menu">
+         <a href="/">About</a>
+         <a href="#">Resume</a>
+         <a href="/reviews">Reviews</a>
+      </nav>
+   </header>
+   <main>
+      <div class="aside">
+         <div class="name">Шаменков Максим Александрович</div>
+         <div class="post">Junior web-developer</div>
+         <div class="main-info">
+            <div class="info-element">
+               <img src="{{url_for('static', filename='icons/phone.svg')}}">
+               <p>+0000000000</p>
+            </div>
+            <div class="info-element">
+               <img src="{{url_for('static', filename='icons/mail.svg')}}">
+               <p>maks.shamen2004@mail.ru</p>
+            </div>
+            <div class="info-element">
+               <img src="{{url_for('static', filename='icons/location.svg')}}">
+               <p>Самара</p>
+            </div>
+         </div>
+         <div class="for-work">
+            <div class="for-work-element">
+               <div class="info-element">
+                  <img src="{{url_for('static', filename='icons/salary.svg')}}">
+                  <p>Желаемая зарплата</p>
+               </div>
+               <p class="comment">Не указана</p>
+            </div>
+            <div class="for-work-element">
+               <div class="info-element">
+                  <img src="{{url_for('static', filename='icons/time.svg')}}">
+                  <p>Занятость</p>
+               </div>
+               <p class="comment">Полная</p>
+            </div>
+            <div class="for-work-element">
+               <div class="info-element">
+                  <img src="{{url_for('static', filename='icons/language.svg')}}">
+                  <p>Иностранные языки</p>
+               </div>
+               <p class="comment">Английский</p>
+            </div>
+            <div class="for-work-element">
+               <div class="info-element">
+                  <img src="{{url_for('static', filename='icons/computer.svg')}}">
+                  <p>Навыки</p>
+               </div>
+               <ul class="skills comment">
+                  <li>HTML, CSS, JS</li>
+                  <li>Python</li>
+                  <li>C++</li>
+                  <li>Git</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="info">
+         <div>
+            <div class="info-header">Личная информация</div>
+            <div class="description">
+               <div class="description-element">
+                  <p>Гражданство:</p>
+                  <p>РФ</p>
+               </div>
+               <div class="description-element">
+                  <p>Возраст:</p>
+                  <p>19 лет</p>
+               </div>
+               <div class="description-element">
+                  <p>Дата рождения:</p>
+                  <p>31.03.2004</p>
+               </div>
+               <div class="description-element">
+                  <p>Пол:</p>
+                  <p>Мужской</p>
+               </div>
+            </div>
+         </div>
+         <div>
+            <div class="info-header">Образование</div>
+            <div class="description">
+               <div class="description-element">
+                  <p>Учебное заведение:</p>
+                  <p>Самарский университет</p>
+               </div>
+               <div class="description-element">
+                  <p>Институт:</p>
+                  <p>Информатики и кибернетики</p>
+               </div>
+               <div class="description-element">
+                  <p>Специальность:</p>
+                  <p>Информационная безопасность автоматизированных систем</p>
+               </div>
+               <div class="description-element">
+                  <p>Курс:</p>
+                  <p>2</p>
+               </div>
+            </div>
+         </div>
+         <div>
+            <div class="info-header">Языки програмирования и стек технологий</div>
+            <div class="description">
+               <div class="description-element">
+                  <p>Frontend-разработка:</p>
+                  <p>HTML, CSS, базовый JS</p>
+               </div>
+               <div class="description-element">
+                  <p>Backend-разработка:</p>
+                  <p>Python(Flask)</p>
+               </div>
+               <div class="description-element">
+                  <p>С++:</p>
+                  <p>Хорошее знание C++ (STL). Знание основных контейнеров и понимание сложности различных операций с
+                     ними. Опыт работы со сборочными системами (CMake)</p>
+               </div>
+            </div>
+         </div>
+         <div>
+            <div class="info-header">Общие знания</div>
+            <div class="description">
+               <div class="description-element">
+                  <p>Понимание принципов ООП и паттернов проектирования. Знаком с SOLID</p>
+               </div>
+               <div class="description-element">
+                  <p>Владение системами контроля версий Git</p>
+               </div>
+               <div class="description-element">
+                  <p>Python:</p>
+                  <p>Опыт работы с Qt, numpy, matplotlib, pandas</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+</body>
+
+</html>

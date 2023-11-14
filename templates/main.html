@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>About Max</title>
+   <link rel="stylesheet" href="{{url_for('static', filename='style/main_style.css')}}">
+</head>
+
+<body>
+   <div class="grid-container">
+      <div class="header">
+         <div class="header-nav">
+            <div class="logo">
+               <a href="#"><img class="home" src="{{url_for('static', filename='icons/home.png')}}"></a>
+            </div>
+            <nav class="menu">
+               <a href="#main">About</a>
+               <a href="/resume">Resume</a>
+               <a href="/reviews">Reviews</a>
+            </nav>
+         </div>
+
+         <div class="info">
+            <div class="about">
+               <div class="about-text">
+                  <h1>Web Developer</h1>
+                  <p class="name">Shamenkov Maxim</p>
+                  <p class="text">Let's find out more about me</p>
+                  <div class="contact">
+                     <div>
+                        <a href="https://vk.com/id482333943">
+                           <img src="{{url_for('static', filename='icons/vk.svg')}}">
+                        </a>
+                     </div>
+                     <div>
+                        <a href="https://github.com/Maximprogrammer58?tab=repositories">
+                           <img src="{{url_for('static', filename='icons/github.svg')}}">
+                        </a>
+                     </div>
+                     <div>
+                        <a href="tel:+0000000000">
+                           <img src="{{url_for('static', filename='icons/phone.svg')}}">
+                        </a>
+                     </div>
+                     <div>
+                        <a href="https://www.codewars.com/users/MaxProger58">
+                           <img src="{{url_for('static', filename='icons/code.svg')}}">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="about-foto">
+                  <img class="foto" src="{{url_for('static', filename='icons/foto.png')}}">
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="main" id="main">
+         <section class="main-about">
+            <div class="card-info">
+               <div class="greeting">Hi, I am <span>Maxim Shamenkov</span></div>
+               <div><i>web developer</i></div>
+               <div class="text">Hello! I am Max. I am a 2nd year student of Samara University
+                  in the direction of information security of automated systems.
+                  I am very fond of web programming. I know python and c++.
+                  Familiar with the basics of frontend development(HTML, CSS, JS)
+                  and backend development in python(Flask).</div>
+               <div class="contact-info">
+                  <div>
+                     <p>Age</p>
+                     <p>19</p>
+                  </div>
+                  <div>
+                     <p>Address</p>
+                     <p>Russia, Samara</p>
+                  </div>
+                  <div>
+                     <p>Email</p>
+                     <p><a href="mailto:Maximprogrammer58@gmail.ru">Maximprogrammer58@gmail.ru</a></p>
+                  </div>
+                  <div>
+                     <p>Phone</p>
+                     <p><a href="tel:+123456789">+123456789</a></p>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="education">
+            <h2>Education</h2>
+            <div class="education-info">
+               <div class="school">
+                  <div class="date">
+                     <div><strong>2011 - 2022</strong></div>
+                  </div>
+                  <div class="place">
+                     <div><img src="{{url_for('static', filename='icons/study.png')}}"></div>
+                     <div><i>School 59 Penza</i></div>
+                  </div>
+                  <div class="result">I graduated from school with
+                     a gold medal and passed 4 exams for 264 points.
+                     At school, he devoted a lot of time to Olympiad
+                     programming in python</div>
+               </div>
+               <div class="universaty">
+                  <div class="date">
+                     <div><strong>2022 - present day</strong></div>
+                  </div>
+                  <div class="place">
+                     <div><img src="{{url_for('static', filename='icons/study.png')}}"></div>
+                     <div><i>Samara University</i></div>
+                  </div>
+                  <div class="result">Now I am in the process of
+                     learning, but already during the first year
+                     I received fundamental knowledge of c++ and starting
+                     from the second year I began to be engaged in frontent
+                     development and python</div>
+               </div>
+            </div>
+         </section>
+
+         <section class="education">
+            <h2>Education</h2>
+            <div class="education-info">
+               <div class="school">
+                  <div class="date">
+                     <div><strong>2011 - 2022</strong></div>
+                  </div>
+                  <div class="place">
+                     <div><img src="{{url_for('static', filename='icons/study.png')}}"></div>
+                     <div><i>School 59 Penza</i></div>
+                  </div>
+                  <div class="result">I graduated from school with
+                     a gold medal and passed 4 exams for 264 points.
+                     At school, he devoted a lot of time to Olympiad
+                     programming in python</div>
+               </div>
+               <div class="universaty">
+                  <div class="date">
+                     <div><strong>2022 - present day</strong></div>
+                  </div>
+                  <div class="place">
+                     <div><img src="{{url_for('static', filename='icons/study.png')}}"></div>
+                     <div><i>Samara University</i></div>
+                  </div>
+                  <div class="result">Now I am in the process of
+                     learning, but already during the first year
+                     I received fundamental knowledge of c++ and starting
+                     from the second year I began to be engaged in frontent
+                     development and python</div>
+               </div>
+            </div>
+         </section>
+
+         <section class="skills">
+            <h2>Skills</h2>
+            <div class="skills-info">
+               <div class="languages">
+                  <div>Languages</div>
+                  <div class="progress">
+                     <div>
+                        <div class="description">
+                           <p>HTML</p>
+                           <p>50%</p>
+                        </div>
+                        <progress max="100" value="50">50%</progress>
+                     </div>
+                     <div>
+                        <div class="description">
+                           <p>CSS</p>
+                           <p>30%</p>
+                        </div>
+                        <progress max="100" value="30">30%</progress>
+                     </div>
+                     <div>
+                        <div class="description">
+                           <p>Js</p>
+                           <p>30%</p>
+                        </div>
+                        <progress max="100" value="30">30%</progress>
+                     </div>
+                     <div>
+                        <div class="description">
+                           <p>Python</p>
+                           <p>80%</p>
+                        </div>
+                        <progress max="100" value="80">80%</progress>
+                     </div>
+                     <div>
+                        <div class="description">
+                           <p>C++</p>
+                           <p>50%</p>
+                        </div>
+                        <progress max="100" value="50">50%</progress>
+                     </div>
+                  </div>
+               </div>
+               <div class="framework">
+                  <div>Framework</div>
+                  <div class="progress">
+                     <div>
+                        <div class="description">
+                           <p>Flask</p>
+                           <p>50%</p>
+                        </div>
+                        <progress max="100" value="50">50%</progress>
+                     </div>
+                     <div>
+                        <div class="description">
+                           <p>Qt</p>
+                           <p>30%</p>
+                        </div>
+                        <progress max="100" value="30">30%</progress>
+                     </div>
+                     <div>
+                        <div class="description">
+                           <p>Selenium</p>
+                           <p>15%</p>
+                        </div>
+                        <progress max="100" value="15">15%</progress>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="achievements">
+            <h2>Achievements</h2>
+            <div class="achievements-info">
+               <div>
+                  <div class="about-comp">
+                     <div>Спутник</div>
+                     <div><img src="{{url_for('static', filename='icons/sputnik.png')}}" class="sputnik"></div>
+                  </div>
+                  <p>Finalist of the All - Russian Competition
+                     <a class="link-competition" href="https://www.sputnikssau.ru /">"Satellite"</a> by
+                     the direction of information technology.
+                  </p>
+               </div>
+               <div>
+                  <div class="about-comp">
+                     <div>ЮниКвант</div>
+                     <div><img src="{{url_for('static', filename='icons/unicvant.png')}}" class="unicvant"></div>
+                  </div>
+                  <p>Winner of the All-Russian competition <a class="link-competition"
+                        href="https://vk.com/officialcampus ">"UniCvant"</a>
+                     in the digital technologies track.</p>
+               </div>
+            </div>
+         </section>
+
+      </div>
+      <div class="footer">
+         <h2>Contact information and links to my works</h2>
+         <div class="link-info">
+            <div>
+               <p>Phone</p>
+               <p><a href="tel:+123456789">+123456789</a></p>
+            </div>
+            <div>
+               <p>Email</p>
+               <p><a href="mailto:Maximprogrammer58@gmail.ru">Maximprogrammer58@gmail.ru</a></p>
+            </div>
+            <div>
+               <p><a href="https://github.com/Maximprogrammer58?tab=repositories">Github</a></p>
+               <p><a href="https://www.codewars.com/users/MaxProger58">Codewars</a></p>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>

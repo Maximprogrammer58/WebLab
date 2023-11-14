@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Reviews</title>
+      <link rel="stylesheet" href="{{url_for('static', filename='style/reviews.css')}}">
+   </head>
+   <body>
+      <header>
+         <div class="logo">
+            <a href="/"><img class="home" src="{{url_for('static', filename='icons/home.png')}}"></a>
+         </div>
+         <nav class="menu">
+               <a href="/">About</a>
+               <a href="/resume">Resume</a>
+               <a href="#">Reviews</a>
+         </nav>
+   </header>
+   <main>
+      <div class="add">
+         <div class="title">Добавить комментарий</div>
+         <form action="/reviews" method="post" class="form-comment">
+            <div>
+               <div>Имя:</div>
+               <input type="text" name="username" class="input" required>
+            </div>
+            <div>
+               <div>Ваш email:</div>
+               <input type="email" name="email" class="input" required>
+            </div>
+            <div>
+               <div>Комментарий</div>
+               <textarea cols="50" rows="10" name="comment" required></textarea>
+            </div>
+            <p><input type="submit" value="Добавить" class="add-comment"/></p>
+         </form>
+         {% for cat, msg in get_flashed_messages(True)%}
+         <div class="flash {{cat}}">{{msg}}</div>
+         {% endfor %}
+      </div>
+      <div class="comment-list">
+         <div class="title">Последние комментарии</div>
+         {% for c in comments -%}
+         <div class="comment">
+            <div class="person">
+               <img src="{{url_for('static', filename='icons/person.svg')}}"> 
+               <div class="username">{{c.username}}</div>
+            </div>
+            <div class="post">{{c.comment}}</div>
+         </div>
+         {% endfor -%}
+      </div>
+   </main>
+   </body>
+</html>
+
+

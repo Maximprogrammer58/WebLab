@@ -1,0 +1,159 @@
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+html,
+body {
+   width: 100%;
+   height: 100%;
+   font-family: Helvetica, sans-serif;
+   box-sizing: border-box;
+   font-size: 20px;
+}
+
+
+header {
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   flex-direction: row;
+   width: 100%;
+   position: fixed;
+   color: #fff;
+   background-color: black;
+   font-size: 20px;
+   height: 70px;
+   z-index: 5000;
+}
+
+.home {
+   height: 30px;
+}
+
+.logo {
+   width: 50%;
+   padding: 20px
+}
+
+.name {
+   font-size: 25px;
+   font-weight: bold;
+}
+
+.menu {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   width: 50%;
+   padding: 20px;
+}
+
+.menu a {
+   display: block;
+   width: fit-content;
+   height: fit-content;
+   text-align: center;
+   cursor: pointer;
+   text-decoration: none;
+   color: white;
+   margin-right: 40px;
+}
+
+.menu a:hover {
+   border-bottom: 3px solid #f68084;
+}
+
+.contact div:hover a img,
+.home:hover {
+   transform: scale(1.2);
+}
+
+main {
+   padding-top: 70px;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   align-items: stretch;
+}
+
+.aside {
+   padding: 10px;
+   background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+   color: #201071;
+}
+
+.main-info,
+.for-work {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   margin-bottom: 10px;
+}
+
+.info-element,
+.description-element {
+   display: flex;
+   gap: 7px;
+   align-items: center;
+}
+
+.for-work-element {
+   display: flex;
+   flex-direction: column;
+}
+
+.name {
+   margin-bottom: 10px;
+   font-size: 27px;
+   margin-top: 10px;
+}
+
+.post {
+   margin-bottom: 10px;
+   font-size: 22px;
+   font-weight: bold;
+}
+
+.comment {
+   margin: 5px 0px 5px 30px;
+}
+
+.skills {
+   list-style: none;
+}
+
+.for-work-element .info-element p,
+.description-element p:nth-child(1) {
+   font-weight: bold;
+}
+
+.info {
+   display: flex;
+   gap: 50px;
+   flex-direction: column;
+   padding: 40px;
+}
+
+.description {
+   margin-top: 10px;
+   display: flex;
+   gap: 10px;
+   flex-direction: column;
+}
+
+.info-header {
+   width: 100%;
+   text-align: center;
+   font-size: 22px;
+   font-weight: bold;
+   border-bottom: 3px solid black;
+   color: #f68084;
+   padding-bottom: 10px;
+}
+
+.description-element {
+   display: flex;
+   gap: 5px;
+   flex-wrap: wrap;
+}

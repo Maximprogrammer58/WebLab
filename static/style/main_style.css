@@ -1,0 +1,382 @@
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+html,
+body {
+   width: 100%;
+   height: 100%;
+   font-family: Helvetica, sans-serif;
+}
+
+.grid-container {
+   display: grid;
+   grid-template-rows: 100vh auto auto;
+   grid-template-columns: 100%;
+}
+
+.main {
+   background-color: rgb(235, 235, 235);
+}
+
+.footer {
+   padding-top: 30px;
+   background-color: black;
+   color: white;
+}
+
+.header-nav {
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   flex-direction: row;
+   width: 100%;
+   position: fixed;
+   color: #fff;
+   background-color: black;
+   font-size: 20px;
+   height: 70px;
+   z-index: 5000;
+}
+
+.home {
+   height: 30px;
+}
+
+.logo {
+   width: 50%;
+   padding: 20px
+}
+
+.name {
+   font-size: 25px;
+   font-weight: bold;
+}
+
+.menu {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   width: 50%;
+   padding: 20px;
+}
+
+.menu a {
+   display: block;
+   width: fit-content;
+   height: fit-content;
+   text-align: center;
+   cursor: pointer;
+   text-decoration: none;
+   color: white;
+   margin-right: 40px;
+}
+
+.info {
+   width: 100%;
+   height: 100vh;
+}
+
+.about {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   color: black;
+   font-size: 20px;
+   padding-top: 100px;
+   align-items: center;
+}
+
+.menu a:hover {
+   border-bottom: 3px solid #f68084;
+}
+
+.about-text {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.about-foto {
+   width: fit-content;
+   text-align: center;
+   border: 10px solid #fff;
+   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+   background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+   text-align: center;
+}
+
+.about-text h1 {
+   color: #f68084;
+}
+
+.contact {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 30px;
+}
+
+.contact div:hover a img,
+.home:hover {
+   transform: scale(1.2);
+}
+
+.foto {
+   display: block;
+   height: 500px;
+   margin: 0 auto;
+}
+
+.main-about {
+   width: 80%;
+   height: fit-content;
+   padding-top: 70px;
+   margin: 0 auto;
+}
+
+.card-info {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   background-color: #fff;
+   height: fit-content;
+   padding: 20px 50px;
+   border-left: 5px solid #f68084;
+}
+
+.contact-info {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   gap: 10px;
+}
+
+.contact-info div {
+   display: flex;
+   flex-direction: row;
+}
+
+.contact-info div p:nth-child(1) {
+   width: 100px;
+   font-weight: bold;
+   font-size: 16px;
+}
+
+.contact-info div p:nth-child(2) {
+   width: fit-content;
+   font-size: 16px;
+}
+
+.card-info .greeting {
+   font-size: 30px;
+   font-weight: bold;
+}
+
+.card-info .greeting span {
+   color: #f68084;
+}
+
+.card-info div:nth-child(2) {
+   font-size: 20px;
+}
+
+.card-info .text {
+   margin-top: 20px;
+   line-height: 20px;
+   margin-bottom: 20px;
+   font-size: 20px;
+}
+
+.education,
+.skills,
+.achievements {
+   margin-top: 30px;
+   width: 80%;
+   height: fit-content;
+   padding-top: 70px;
+   margin: 0 auto;
+}
+
+.education h2,
+.skills h2,
+.achievements h2 {
+   color: #f68084;
+   text-align: center;
+}
+
+.education-info,
+.skills-info {
+   margin-top: 30px;
+   padding: 10px;
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+   justify-content: space-between;
+   align-items: stretch;
+}
+
+.achievements-info {
+   margin-top: 30px;
+   padding: 10px;
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+   justify-content: space-between;
+   align-items: stretch;
+   margin-bottom: 30px;
+}
+
+.education-info>div,
+.skills-info>div,
+.achievements-info>div {
+   padding: 20px;
+   width: 50%;
+   background-color: #fff;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   border-left: 5px solid #f68084;
+}
+
+.education-info .place {
+   display: flex;
+   flex-direction: row;
+   gap: 5px;
+   align-items: center;
+}
+
+.link-info>div a {
+   font-weight: bold;
+}
+
+.footer h2 {
+   text-align: center;
+   color: #f68084;
+}
+
+.link-info {
+   width: fit-content;
+   margin: 0 auto;
+   margin-top: 40px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: left;
+   gap: 20px;
+}
+
+.link-info div {
+   display: flex;
+   flex-direction: row;
+}
+
+.link-info div p:nth-child(1) {
+   width: 100px;
+   font-weight: bold;
+   font-size: 16px;
+}
+
+.link-info div p:nth-child(2) {
+   width: fit-content;
+   font-size: 16px;
+}
+
+.link-info>div>p a {
+   text-decoration: none;
+   color: rgb(32, 77, 192);
+   cursor: pointer;
+}
+
+.link-info>div:last-child {
+   margin-bottom: 50px;
+}
+
+.contact-info>div>p>a {
+   text-decoration: none;
+   color: black;
+}
+
+.contact-info>div>p>a:hover {
+   text-decoration: none;
+   color: #2f1aec;
+}
+
+progress {
+   display: inline-block;
+   width: 190px;
+   height: 20px;
+   margin: 0;
+   background: none;
+   border: 0;
+   border-radius: 15px;
+   text-align: left;
+   position: relative;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 0.8em;
+}
+
+.languages>div:nth-child(1),
+.framework>div:nth-child(1),
+.achievements-info>div>div:nth-child(1) {
+   font-size: 20px;
+   color: #2f1aec;
+   font-weight: bold;
+   margin-bottom: 20px;
+}
+
+progress::-webkit-progress-bar {
+   height: 15px;
+   width: 200px;
+   margin: 0 auto;
+   background-color: #CCC;
+   border-radius: 15px;
+   box-shadow: 0px 0px 6px #777 inset;
+}
+
+progress::-webkit-progress-value {
+   display: inline-block;
+   height: 11px;
+   margin: 0px -10px 0 0;
+   background: green;
+   border-radius: 15px;
+   box-shadow: 0px 0px 6px #777 inset;
+}
+
+.progress {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   gap: 15px;
+}
+
+.description {
+   width: 200px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.sputnik {
+   width: 80px;
+   border-radius: 50%;
+}
+
+.unicvant {
+   width: 50px;
+   border-radius: 50%;
+}
+
+.about-comp {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.link-competition {
+   text-decoration: none;
+   color: #2f1aec;
+}
